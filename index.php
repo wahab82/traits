@@ -5,7 +5,7 @@ include "laser.php";
 include "projector.php";
 
 class Galaxy extends Mobile {
-	use Laser, Projector{
+	use Laser, Projector {
 		Projector::power insteadof Laser;
 		Laser::power as Lpower;
 	}
